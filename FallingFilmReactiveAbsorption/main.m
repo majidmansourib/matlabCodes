@@ -46,7 +46,7 @@ CC0 = zeros ((m-1)*(n-1),1);
 
 CC = zeros ((m-1)*(n-1),1);
 s = 0;
-while max(abs(CC0- CC))>1e-6 || s==0 ) %check whether the Hypothetical and the Real C_C are the same by an accuracy of 1e-6
+while max(abs(CC0- CC))>1e-6 || s==0  %check whether the Hypothetical and the Real C_C are the same by an accuracy of 1e-6
     if s>0
         CC0 = CC; %make the hypothetical C_C equal to calculated C_C in the last loop
     end
